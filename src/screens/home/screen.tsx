@@ -8,7 +8,7 @@ import {ScreenProps} from './types';
 const HomeScreen = ({navigation}: ScreenProps) => {
   const [value, setValue] = React.useState('');
   const onSubmit = () => {
-    // TODO: navigation.navigate('Resume', {nickname: value});
+    navigation.navigate('Resume', {nickname: value});
   };
 
   return (
